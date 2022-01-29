@@ -1,0 +1,71 @@
+p{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 60px;
+    font-weight: 300;
+}
+
+h2{
+    font-size: 33px;
+    font-weight: 300;
+}
+
+.CTA-text{
+    font-size: 33px;
+    font-weight: 300;
+}
+
+.header a {
+    font-family:'Open Sans';
+    font-size: 60px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #393939;
+
+}
+
+.nav-list ul{
+    font-size: 21px;
+    font-weight: 400;
+    list-style-type: none;
+}
+/* Shop section */
+.shop-section{
+    background-color:#FFF0ED ;
+}
+
+
+.button{
+    background-color: #5BACC3;
+    color: white;
+}
+
+.button a{
+    font-family:'Open Sans';
+    text-decoration: none;
+    color: #393939;
+}
+/* ----------------------- */
+
+/* Our products section */
+
+
+
+.prod-item p{
+    color: #5BACC3;
+}
+/* ----------------------- */
+
+/* Disounts section */
+
+.discount {
+    background-color: #393939;
+    color: white;
+}
+
+footer{
+    background-color: #FFF0ED;
+}
