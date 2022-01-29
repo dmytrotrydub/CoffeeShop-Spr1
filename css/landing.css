@@ -1,26 +1,27 @@
 p{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 400;
 }
 
 h1{
-    font-size: 60px;
+    font-size: 3.75em;
     font-weight: 300;
 }
 
-h2{
-    font-size: 33px;
-    font-weight: 300;
+
+header img {
+    min-width: 50px;
+    max-width: 120px;
 }
 
 .CTA-text{
-    font-size: 33px;
+    font-size: 2.0625rem;
     font-weight: 300;
 }
 
 .header a {
     font-family:'Open Sans';
-    font-size: 60px;
+    font-size: 3.75em;
     font-weight: 300;
     text-decoration: none;
     color: #393939;
@@ -28,7 +29,7 @@ h2{
 }
 
 .nav-list ul{
-    font-size: 21px;
+    font-size: 1.3125rem;
     font-weight: 400;
     list-style-type: none;
 }
