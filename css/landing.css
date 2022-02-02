@@ -1,16 +1,15 @@
 
-header img {
+.logo-header img {
     min-width: 50px;
     max-width: 120px;
 }
 
-.CTA-text{
+.text__h3--font{
     font-size: 2.0625rem;
     font-weight: 300;
 }
 
-.header a {
-    font-family:'Open Sans';
+.logo__header a {
     font-size: 2.06rem;
     font-weight: 300;
     text-decoration: none;
@@ -18,10 +17,11 @@ header img {
 
 }
 
-.nav-list ul{
+.header__nav-list ul{
     font-size: 1.31rem;
     font-weight: 400;
     list-style-type: none;
+    display: inline-block;
 }
 /* Shop section */
 .shop-section{
@@ -35,7 +35,6 @@ header img {
 }
 
 .button a{
-    font-family:'Open Sans';
     text-decoration: none;
     color: #393939;
 }

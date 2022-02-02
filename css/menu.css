@@ -1,99 +1,82 @@
-/* Header img styling */
-header img {
-    min-width: 50px;
-    max-width: 120px;
-}
 
-.nitro-header a {
-    color: #393939;
-    font-size:2.06rem;
-    font-weight:300;
-    text-decoration: none;
-}
-
-
-.nav-links{
-    font-size:1.31rem;
-    font-weight: 400;
-    list-style-type: none;
-    
-}
-/* ------------------------------------ */
 
 /* Menu cover styling */
-.menu-header{
+.menu__header-container{
     background-image: url("../assets/coffee-circle.jpg");
     width: 100%;
-    height: 800px;
+    height: 50rem;
     background-position: center;
     text-align: center;
     vertical-align: middle;
 }
 
-.menu-text-container{
+.menu__text-container{
     background-color: #393939;
     height: 30%;
-    width: 40%;
+    width: 30%;
+    display: inline-block;
+    margin-right: 1.25rem;
 }
 
-.menu-text-container h1{
+.menu__text-container h1{
     font-size: 3.75rem;
     font-weight: 300;
     color:white;
+    display: contents;
 }
 /* ---------------------------------- */
 
 /* Drink links list  */
 
-.drink-list-container{
+
+.drink-list__container{
     background-color: #393939;
-}
-.drink-list-links{
     text-align: center;
+}
+.drink-list__container-links a{   
     list-style-type: none;
     font-size:1.31rem;
     font-weight: 400;
-
-    
-}
-.drink-list-links li a{
+    display: inline-block;
     text-decoration: none;
     color: white;
 }
 
-ul >li{
-    list-style-type: none;
-    
+
+span {
+    font-weight: 500;
+    margin: 0px 0.62rem;
+    font-weight: bold;
+    font-size: 30px;
 }
+
 /* -------------------------------------- */
 
 /* Drinks  */
 
-.product h2{
+.product-description h2{
     font-size: 3.75rem;
     font-weight: 300;
     text-align: center;
 }
 
-.product h3{
+.product-description h3{
     font-size: 2.06rem;
     font-weight: 300;
     text-align: center;
 }
 
-.product p{
+
+
+.product-description p{
     text-align: center;
+
+}
+.product-description__details {
+    width: 50%;
+    margin-left: 25.93rem;
+    display: inline-block;
 }
 
-.nitro-pink{
-    background-color: #FFF0ED;
-}
 
-.light-gray{
-    background-color: #F7F7F7;
-}
-
-p:last-of-type{
-    color: #5BACC3;
-}
 /* -------- */
