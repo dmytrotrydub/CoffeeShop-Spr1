@@ -10,26 +10,28 @@
     <link rel="stylesheet" type="text/css" href="./css/landing.css">
 </head>
 <body>
-    <header class="logo-header__container">
-        <h2 class="logo-heading__h2">
-            <a class="logo__anchor-main-page" href="./Landing_Page.html">
-                <img src="assets/coffee-beans-logo-and-footer.svg" alt="bean logo"/>       
-            </a>
-            nitro
-        </h2>
-        <nav class="header__nav-list">
-            <ul class="header__nav-links">
-                <li class="nav-listed__link">
-                    <a class="header-links__link" href="./Landing_Page.html">ABOUT</a>
-                </li>
-                <li class="nav-listed__link">
-                    <a class="header-links__link" href="./pages/menu.html">MENU</a>
-                </li>
-                <li class="nav-listed__link">
-                    <a class="header-links__link header-links__link__nitro-blue" href="./pages/menu.html">SHOP NOW</a>
-                </li>
-                </ul>
-        </nav>
+    <header class="logo__header">
+        <div class="logo-heading-navigation__container">
+            <h2 class="logo-heading__h2">
+                <a class="logo__anchor-main-page" href="./Landing_Page.html">
+                    <img src="assets/coffee-beans-logo-and-footer.svg" alt="bean logo"/>       
+                </a>
+                nitro
+            </h2>        
+            <nav class="header__nav-list">
+                <ul class="header__nav-links">
+                    <li class="nav-listed__link">
+                        <a class="header-links__link" href="./Landing_Page.html">ABOUT</a>
+                    </li>
+                    <li class="nav-listed__link">
+                        <a class="header-links__link" href="./pages/menu.html">MENU</a>
+                    </li>
+                    <li class="nav-listed__link">
+                        <a class="header-links__link header-links__link__nitro-blue" href="./pages/menu.html">SHOP NOW</a>
+                    </li>
+                    </ul>
+            </nav>
+        </div>
     </header>
     
     </nav>
@@ -49,21 +51,48 @@
     <section class="products-list__container">
         <h1 class="products-heading__h1">Our Products</h1>
             <div class="prod-items__container">
-                    <div class="prod-item__card">
-                    <h3 class="products-heading__h3">Coffee beans</h3>
-                    <img class="products__image" src="./assets/coffeebeans.png" alt="coffee beans"/>
-                    <p class="prod-item__price">$18.99</p>            
-            </div>
-            <div class="prod-item__card">
-                <h3 class="products-heading__h3">Cold brew</h3>
-                <img class="products__image" src="./assets/coldbrew.png" alt="cold brew"/>
-                <p class="prod-ite__price">$4.99</p>            
-            </div>
-            <div class="prod-item__card">
-                <h3 class="products-heading__h3">In-house brew</h3>
-                <img class="products__image" src="./assets/inhousebrew.png" alt="in-house brew"/>
-                <p class="prod-item__price">$18.99</p>            
-            </div>
+                <div class="prod-item__card">
+                    <div class="product__image">
+                        <img src="./assets/coffeebeans.png" alt="coffee beans"/>
+                    </div>
+                    <div class="product__name">
+                        <div class="product__detail">
+                            <h3 class="products-heading__h3">Coffee beans</h3>
+                            <p class="product__package">pack of 3</p>
+                        </div>
+                    <div class="prod-item__price">
+                        <p class="price">$19</p> 
+                    </div> 
+                    </div>           
+                </div>
+                <div class="prod-item__card">
+                    <div class="product__image">
+                        <img src="./assets/coldbrew.png" alt="cold brew"/>
+                    </div>
+                    <div class="product__name">
+                        <div class="product__detail">
+                            <h3 class="products-heading__h3">Cold brew</h3>
+                            <p class="product__package">1 can</p>
+                        </div> 
+                        <div class="prod-item__price">
+                            <p class="price">$5</p> 
+                        </div>
+                    </div>          
+                </div>
+                <div class="prod-item__card">
+                    <div class="product__image">
+                        <img src="./assets/inhousebrew.png" alt="in-house brew"/>
+                    </div>
+                    <div class="product__name">
+                        <div class="product__detail">
+                            <h3 class="products-heading__h3">In-house brew</h3>
+                            <p class="product__package">1 cup</p>
+                        </div>
+                        <div class="prod-item__price">
+                            <p class="price">$3</p>
+                        </div>
+                    </div>           
+                </div>
         </div>
         <div class="view-all__container">
             <button class="action-button__view-all">
