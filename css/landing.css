@@ -1,75 +1,30 @@
-/* -----HEADER STYLING-------- */
-header{
-    background-color:#FFF0ED;
-}
 
-.logo__header {
-    width: 100%;
-    position: fixed;
-}
-
-
-.logo-heading-navigation__container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-}
-
-
-.logo__anchor-main-page{
-    text-decoration: none;
-}
-
-.logo-heading__h2 {
-    font-size: 3.75rem;
-    font-weight: 300;
-    color: #393939;
-    text-decoration: none;
-    margin: 0;
-}
-
-.header__nav-list {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.nav-listed__link {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0px 1.87rem;
-    text-decoration: none;
-}
-
-.header__nav-links {
-    font-size: 1.31rem;
-    font-weight: 400;
-    list-style-type: none;
-    display: flex;
-    text-decoration: none;
-}
-
-
-.header-links__link {
-    font-size: 1.31rem;
-    font-weight: 400;
-    text-decoration: none;
-    display: inline-block;
-    color: #393939;
-}
-
-.header-links__link__nitro-blue {
-    color: #5BACC3;
-}
 /* ------------------------------- */
 
 
 /* ----MAIN SECTION STYLING --------- */
 
 .main-section__shop-now{
-    height: fit-content;
     background-color: #FFF0ED;
+}
+
+.main-section-shop-now__container {
+    display: flex;
+    height: fit-content;
+    flex-direction: row;
+    align-items: center;
+}
+
+.heading-description__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start ;
+}
+
+.nitro-shop-cta__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
 .nitro-shop__cta{
@@ -83,6 +38,7 @@ header{
 
 .main-heading__h1-nitro-coffee{
     font-size: 3.75rem;
+    text-align: start;
     font-weight: 300;
     display: inline-block;
     margin-bottom: 0px;
@@ -93,7 +49,6 @@ header{
     font-weight: 400;
     display: inline-block;
     text-align: initial;
-    padding-left:5.93rem;
 }
 
 
@@ -108,7 +63,7 @@ header{
 }
 
 .action-button__shop-now-layout {
-    padding-right: 9.06rem;
+    display: flex;
 
 }
 
@@ -116,8 +71,8 @@ header{
     background-color: #5BACC3;
     min-width: 11.25rem;
     max-width: 80%;
-    padding:1.25rem;
-    margin: 1.25rem;
+    padding:1.25rem 1.25rem 1.25rem 0;
+    margin: 1.25rem 1.25rem 1.25rem 0;
     border: none;
     text-decoration: none;
 }
@@ -126,6 +81,10 @@ header{
     color: white;
     font-size: 1.31rem;
     font-weight: 400;
+}
+
+.shop-now-img__container {
+    margin-top: 50px;
 }
 /* ------------------------- */
 
@@ -136,7 +95,7 @@ header{
     background-color:#F7F7F7;
 }
 
-.products-heading__h1 {
+.product__heading {
     display: block;
     font-size: 3.75rem;
     font-weight: 300;
@@ -223,7 +182,7 @@ header{
 .view-all__container {
     text-align: center;
     background-color: #F7F7F7;
-    margin-top: 30px;
+    padding: 20px 0 20px 0;
 }
 
 .action-button__view-all {
@@ -246,12 +205,21 @@ header{
 
 
 /* ------DISCOUNT SECTION SSTYLING ------------- */
+
+
 .discount__info {
     display: inline-block;
-    width: 100%;
-    text-align: justify;
-    background-color: #393939;
+    text-align: justify;;
     color: white;
+    width: 100%;
+}
+
+.discount-info__container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 100px 0;
 }
 
 .discount-info__text {
@@ -259,8 +227,11 @@ header{
     font-weight:400;
     max-width: 90%;
     color: white;
+    background-color: #393939;
     text-align: center;
-    padding-left: 5rem;
+    min-width: 2.81rem;
+    padding: 1.25em;
+    margin: 1.25em;
 }
     
 .discount-info__text span{
@@ -275,10 +246,17 @@ header{
 /* -------FOOTER STYLING -----------------------*/
 footer{
     background-color: #FFF0ED;
-    display: flex;
+    display: block;
+    flex-direction: row;
     justify-content: space-around;
     height: 50%;
     padding: 3.12rem 0rem;
+}
+
+.footer__container {
+    display: flex;
+    flex-direction: revert;
+    justify-content: space-evenly;
 }
 
 
