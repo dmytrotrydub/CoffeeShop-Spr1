@@ -16,7 +16,7 @@ header{
 }
 
 
-.logo-heading-navigation__container {
+.logo-heading__container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -29,7 +29,7 @@ header{
     text-decoration: none;
 }
 
-.logo-heading__h2 {
+.logo-heading__name {
     font-size: 3.75rem;
     font-weight: 300;
     color: #393939;
@@ -50,7 +50,6 @@ header{
 }
 
 .header__nav-links {
-    font-size: 1.31rem;
     font-weight: 400;
     list-style-type: none;
     display: flex;
