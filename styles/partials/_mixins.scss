@@ -1,0 +1,79 @@
+@use "./variables";
+
+// ----Font----//
+@mixin textVariationSize ($size) {
+    font-size: $size;
+}
+
+@mixin fontWeight ($font) {
+    font-weight: $font;
+}
+
+
+
+
+
+// ----Color----//
+
+@mixin defineColor ($color){
+    color: $color;
+}
+
+@mixin backgroundColor ($color) {
+    background-color: $color;
+}
+
+
+
+// ---FlexBox---//
+
+@mixin displayProps ($positioning, $direction, $align, $justify){
+    display: $positioning;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+
+
+
+//----Sizing---//
+
+@mixin paddingStyle ($top,$right,$bottom, $left){
+    padding: $top,$right,$bottom, $left
+}
+
+@mixin marginStyle ($top,$right,$bottom, $left) {
+    margin: $top,$right,$bottom, $left;
+}
+
+@mixin elementSizingParameters ($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+@mixin heightStyling ($height) {
+    height: $height;
+}
+
+@mixin widthStyling ($width) {
+    width: $width;
+}
+
+@mixin maxHeightWidth ($maxHeight, $maxWidth){
+    max-height: $maxHeight;
+    max-width: $maxWidth;
+}
+
+@mixin minHeightMinWidth ($minHeight, $minWidth) {
+    min-height: $minHeight;
+    min-width: $minWidth;
+}
+
+
+// ---Border Radius---//
+
+
+@mixin borderRadius ($radius){
+    border-radius: $radius;
+}

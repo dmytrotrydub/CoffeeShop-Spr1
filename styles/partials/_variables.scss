@@ -1,13 +1,25 @@
-$backgroundColor:#FFF0ED;
+@use "./mixins";
+
+// ---Colors-----//
+
+$colorWhite:white;
+$backgroundColorPink:#FFF0ED;
 $colorGraphite:#393939;
 $colorNitroBlue:#5BACC3;
 
 // ---Font----
-
+$fontWeightBold: 700;
 $openSans:'Open Sans';
 
 
 // ----Sizing------//
 
 $maximum:100%;
+
+
+
+
+
+
+
 

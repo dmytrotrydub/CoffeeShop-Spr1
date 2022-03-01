@@ -1,0 +1,18 @@
+.action-button__container {
+  display: flex;
+}
+.action-button__shop-now {
+  background-color: #5BACC3;
+  min-width: 11.25rem;
+  max-width: 80%;
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  margin: 1.25rem 1.25rem 1.25rem 0;
+  border: none;
+  text-decoration: none;
+}
+.action-button__link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.31rem;
+  font-weight: 400;
+}/*# sourceMappingURL=shop-now-button.css.map */

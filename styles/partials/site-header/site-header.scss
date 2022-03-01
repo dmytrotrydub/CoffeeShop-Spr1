@@ -1,0 +1,111 @@
+@use "./variables";
+
+
+
+
+body {
+    font-family: variables.$openSans;
+    font-weight: 400;
+    margin: 0;
+}
+
+header{
+    background-color: variables.$backgroundColor;
+}
+
+.logo   {
+    &__header {
+        width: variables.$maximum;
+        position: fixed;
+        right: 0;
+        top: 0;
+        text-decoration: none;
+    }
+
+    &__anchor-main-page{ 
+        text-decoration: none;
+    }
+    
+}
+
+.logo-heading {
+    &__container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+    &__name {
+        @extend .logo__anchor-main-page;
+        font-size: 3.75rem;
+        font-weight: 300;
+        color:variables.$colorGraphite;
+        margin: 0;
+    }
+}
+
+
+
+.header-nav{
+    &-list {
+        display: flex;
+        flex-wrap: wrap;
+}
+    &-links {
+        font-weight: 400;
+        list-style-type: none;
+        display: flex;
+        @extend .logo__anchor-main-page;
+    }
+
+    &__listed-link {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0px 1.87rem;
+        text-decoration: none;
+}
+}
+
+
+.header-nav     {
+    &-links__link {
+        font-size: 1.31rem;
+        font-weight: 400;
+        text-decoration: none;
+        display: inline-block;
+        color:variables.$colorGraphite;
+    }
+
+    nitro-blue {
+        color: variables.$colorNitroBlue;
+    }
+}
+
+// -----Footer------//
+
+.site-footer{
+    background-color: variables.$backgroundColor;
+    display: block;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50%;
+    padding: 3.12rem 0rem;
+
+    &__container {
+        display: flex;
+        flex-direction: revert;
+        justify-content: space-evenly;
+    }
+
+    &__title {
+        font-size: 2.062rem;
+        font-weight: 300;
+    }
+
+    &__social-logo{
+        max-width: 7.5rem; 
+        width: 3.12rem;
+        height:3.12rem;
+    }
+}

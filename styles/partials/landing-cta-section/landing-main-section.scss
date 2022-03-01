@@ -1,0 +1,55 @@
+@use "../global";
+@use "../variables";
+@use "../mixins";
+
+
+
+
+
+.main-section   {
+    &-shop-now  {
+      @include backgroundColor (variables.$backgroundColorPink);
+    }
+
+    &-shop-now__container {
+        @include displayProps (flex,row,center);
+        height: fit-content;
+    }
+
+    &__heading-description-container {
+        @include displayProps (flex,column,flex-start);
+    }
+}
+
+
+.nitro-shop-cta{
+    @include elementSizingParameters (30%, 50%);
+    display: inline-block;
+    text-align: center;
+    @include marginStyle (0rem,31.25rem,0rem,6.25rem);
+    @include paddingStyle (12.5rem,0rem,12.5rem,0rem);
+
+    &__container {
+        @include displayProps (flex,column,flex-start);
+}
+
+
+    &__title{
+        @include textVariationSize (3.75rem);
+        text-align: start;
+        @include fontWeight (300);
+        display: inline-block;
+        margin-bottom: 0px;
+    }
+
+    &__description {
+        @include textVariationSize(1.12rem);
+        @include fontWeight (400);
+        display: inline-block;
+        text-align: initial;
+    }
+
+    .nitro-shop__img__container {
+        margin-top: 50px;
+    }
+}

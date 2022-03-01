@@ -1,0 +1,25 @@
+.site-footer{
+    background-color: variables.$backgroundColor;
+    display: block;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 50%;
+    padding: 3.12rem 0rem;
+
+    &__container {
+        display: flex;
+        flex-direction: revert;
+        justify-content: space-evenly;
+    }
+
+    &__title {
+        font-size: 2.062rem;
+        font-weight: 300;
+    }
+
+    &__social-logo{
+        max-width: 7.5rem; 
+        width: 3.12rem;
+        height:3.12rem;
+    }
+}

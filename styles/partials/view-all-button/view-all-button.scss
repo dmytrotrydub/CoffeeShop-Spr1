@@ -1,0 +1,32 @@
+@use "../global";
+@use "../variables";
+@use "../mixins";
+
+
+
+.view-all-button   {
+    &__container {
+        text-align: center;
+        background-color: #F7F7F7;
+        padding: 20px 0 20px 0;
+    }
+
+    &__name {
+        background-color: #5BACC3;
+        min-width: 11.25rem;
+        max-width: 80%;
+        padding:1.25rem;
+        margin: 1.25rem;
+        border: none;
+        text-decoration: none;
+    }
+}
+
+
+
+.view-all__link {
+    text-decoration: none;
+    color: white;
+    font-size: 1.31rem;
+    font-weight: 400;
+}

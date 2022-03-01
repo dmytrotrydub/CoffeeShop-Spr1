@@ -1,0 +1,46 @@
+.main-section-shop-now {
+  background-color: #FFF0ED;
+}
+.main-section-shop-now__container {
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-direction: row;
+  align-items: center;
+}
+.main-section__heading-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.nitro-shop-cta {
+  width: 30%;
+  height: 50%;
+  display: inline-block;
+  text-align: center;
+  margin: 0rem 31.25rem 0rem 6.25rem;
+  padding: 12.5rem 0rem;
+}
+.nitro-shop-cta__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.nitro-shop-cta__title {
+  font-size: 3.75rem;
+  text-align: start;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.nitro-shop-cta__description {
+  font-size: 1.12rem;
+  font-weight: 400;
+  display: inline-block;
+  text-align: initial;
+}
+.nitro-shop-cta .nitro-shop__img__container {
+  margin-top: 50px;
+}/*# sourceMappingURL=landing-main-section.css.map */

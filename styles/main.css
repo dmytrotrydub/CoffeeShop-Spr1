@@ -12,6 +12,11 @@ header {
   width: 100%;
   position: fixed;
   right: 0;
+  top: 0;
+  text-decoration: none;
+}
+.logo__anchor-main-page, .header-nav-links, .logo-heading__name {
+  text-decoration: none;
 }
 
 .logo-heading__container {
@@ -19,7 +24,7 @@ header {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 .logo-heading__name {
   font-size: 3.75rem;
@@ -27,34 +32,252 @@ header {
   color: #393939;
   margin: 0;
 }
-.logo-heading .header__nav-links, .logo-heading .logo-heading__name {
-  text-decoration: none;
-}
 
-.header__nav-list {
+.header-nav-list {
   display: flex;
   flex-wrap: wrap;
 }
-.header__nav__listed-link {
+.header-nav-links {
+  font-weight: 400;
+  list-style-type: none;
+  display: flex;
+}
+.header-nav__listed-link {
   list-style-type: none;
   display: inline-block;
   margin: 0px 1.87rem;
   text-decoration: none;
 }
-.header__nav-links {
-  font-weight: 400;
-  list-style-type: none;
-  display: flex;
-}
 
-.header-links__link {
+.header-nav-links__link {
   font-size: 1.31rem;
   font-weight: 400;
   text-decoration: none;
   display: inline-block;
   color: #393939;
 }
-
-.header-links__link__nitro-blue {
+.header-nav .nitro-blue {
   color: #5BACC3;
+}
+
+.site-footer {
+  background-color: #FFF0ED;
+  display: block;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 50%;
+  padding: 3.12rem 0rem;
+}
+.site-footer__container {
+  display: flex;
+  flex-direction: revert;
+  justify-content: space-evenly;
+}
+.site-footer__title {
+  font-size: 2.062rem;
+  font-weight: 300;
+}
+.site-footer__social-logo {
+  max-width: 7.5rem;
+  width: 3.12rem;
+  height: 3.12rem;
+}
+
+/* ----MAIN SECTION STYLING --------- */
+.main-section-shop-now {
+  background-color: #FFF0ED;
+}
+.main-section-shop-now__container {
+  display: flex;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  flex-direction: row;
+  align-items: center;
+}
+.main-section__heading-description-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.nitro-shop-cta {
+  width: 30%;
+  height: 50%;
+  display: inline-block;
+  text-align: center;
+  margin: 0rem 31.25rem 0rem 6.25rem;
+  padding: 12.5rem 0rem;
+}
+.nitro-shop-cta__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.nitro-shop-cta__title {
+  font-size: 3.75rem;
+  text-align: start;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+.nitro-shop-cta__description {
+  font-size: 1.12rem;
+  font-weight: 400;
+  display: inline-block;
+  text-align: initial;
+}
+.nitro-shop-cta .nitro-shop__img__container {
+  margin-top: 50px;
+}
+
+.action-button__container {
+  display: flex;
+}
+.action-button__shop-now {
+  background-color: #5BACC3;
+  min-width: 11.25rem;
+  max-width: 80%;
+  padding: 1.25rem 1.25rem 1.25rem 1.25rem;
+  margin: 1.25rem 1.25rem 1.25rem 0;
+  border: none;
+  text-decoration: none;
+}
+.action-button__link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.31rem;
+  font-weight: 400;
+}
+
+/* ------------------------- */
+/* -----PRODUCTS STYLING ---------- */
+.products-list__container {
+  background-color: #F7F7F7;
+}
+.products-list-items__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #F7F7F7;
+}
+.products-list__title {
+  display: block;
+  font-size: 3.75rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 0;
+}
+.products-list-item__card {
+  min-height: 27.5rem;
+  max-height: 28.75rem;
+  min-width: 20.62rem;
+  max-width: 21.875rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  box-sizing: border-box;
+  border-radius: 1.25em;
+  background-color: white;
+  box-shadow: 0 0.31rem 0.56rem -0.0625rem rgba(0, 0, 0, 0.25);
+  width: 18.75rem;
+  height: 28.125rem;
+  text-align: center;
+}
+.products-list__image {
+  min-height: 15rem;
+  max-height: 34.37rem;
+  margin-top: 1.25em;
+}
+.products-list__name {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: space-around;
+  margin: 3.12em 0 0 0;
+  background-color: #FFF0ED;
+  width: 100%;
+  border-radius: 0 0 1.25em 1.25em;
+}
+.products-list__details {
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px 0 16px;
+}
+.products-list-name__title {
+  font-size: 2.062rem;
+  font-weight: 300;
+  color: #393939;
+  margin: 0;
+}
+.products-list__package {
+  text-align: start;
+  margin: 0;
+}
+.products-list-item__price {
+  font-size: 1.12em;
+  font-weight: 400;
+  color: #5BACC3;
+  margin: 0 15px 0 15px;
+}
+.products-list__price-amount {
+  font-weight: bold;
+  font-size: 2.0625em;
+}
+
+/* --------------------------------- */
+.view-all-button__container {
+  text-align: center;
+  background-color: #F7F7F7;
+  padding: 20px 0 20px 0;
+}
+.view-all-button__name {
+  background-color: #5BACC3;
+  min-width: 11.25rem;
+  max-width: 80%;
+  padding: 1.25rem;
+  margin: 1.25rem;
+  border: none;
+  text-decoration: none;
+}
+
+.view-all__link {
+  text-decoration: none;
+  color: white;
+  font-size: 1.31rem;
+  font-weight: 400;
+}
+
+/* ------------------------------- */
+/* ------DISCOUNT SECTION STYLING ------------- */
+.discount-info {
+  display: inline-block;
+  text-align: justify;
+  color: white;
+  width: 100%;
+}
+.discount-info__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+}
+.discount-info__text {
+  font-size: 2.81rem;
+  font-weight: 400;
+  max-width: 90%;
+  color: white;
+  background-color: #393939;
+  text-align: center;
+  min-width: 2.81rem;
+  padding: 1.25em;
+  margin: 1.25em;
+}
+.discount-info__text span {
+  font-size: 2.81rem;
+  font-weight: 700;
+  min-width: 2.81rem;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
