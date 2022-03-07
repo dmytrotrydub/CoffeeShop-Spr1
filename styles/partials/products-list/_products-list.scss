@@ -1,0 +1,93 @@
+
+@use "../variables";
+@use "../mixins";
+
+%card {
+    @include mixins.backgroundColor (variables.$colorWhite);  
+    min-height: 27.5rem;
+    max-height: 28.75rem;
+    min-width: 20.62rem;
+    max-width: 21.85rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1.25em;
+    height: 28.12rem, 18.75rem;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow:  0 0.31rem 0.56rem -0.0625rem  rgba(0, 0, 0, 0.25);
+}
+
+.products-list  {
+    &__container {
+        @include mixins.backgroundColor (variables.$productSectionColor);
+        padding: 2.5em 0;
+    }
+
+    &-items__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    &__title {
+        @include mixins.textVariationSize (3.75rem);
+        @include mixins.fontWeight (300);
+        text-align: center;
+        margin-top: 0;
+        display: block;
+    }
+
+    &-item__card {
+        @extend %card;
+    }
+
+
+    &__image {
+        min-height: 15rem;
+        max-height: 34.37rem;
+        margin-top: 1.25em;   
+    }
+
+    &__name {
+        @include mixins.backgroundColor (variables.$backgroundColorPink);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: 3.12 0 0 0;
+        flex-grow: 1;
+        width: 100%;
+        border-radius: 0 0 1.25em 1.25em;
+    }
+
+    &__details {
+        display: flex;
+        flex-direction: column;
+        margin: 0 16px 0 16px;
+    }
+
+    &-name__title{
+        @include mixins.defineColor (variables.$colorGraphite);
+        @include mixins.textVariationSize (2.062rem);
+        @include mixins.fontWeight (300);
+        margin: 0;
+    }
+
+    &__package {
+        text-align: start;
+        margin: 0;
+    }
+
+    &-item__price{
+        @include mixins.textVariationSize (1.12em);
+        @include mixins.fontWeight (400);
+        @include mixins.defineColor (variables.$colorNitroBlue);
+    }
+
+    &__price-amount{
+        @include mixins.fontWeight (bold);
+        @include mixins.textVariationSize (2.06em);
+    }
+}

@@ -1,25 +1,27 @@
-@use "./variables";
+@use "../variables";
+@use "../mixins";
 
 
 
 
 body {
+    @include mixins.fontWeight (400);
     font-family: variables.$openSans;
-    font-weight: 400;
     margin: 0;
 }
 
 header{
-    background-color: variables.$backgroundColor;
+    @include mixins.backgroundColor (variables.$backgroundColorPink);
 }
 
 .logo   {
     &__header {
-        width: variables.$maximum;
+        width: 100%;
         position: fixed;
         right: 0;
         top: 0;
         text-decoration: none;
+        z-index: 2;
     }
 
     &__anchor-main-page{ 
@@ -38,8 +40,8 @@ header{
 }
     &__name {
         @extend .logo__anchor-main-page;
-        font-size: 3.75rem;
-        font-weight: 300;
+        @include mixins.fontWeight (300);
+        @include mixins.textVariationSize (3.75em);
         color:variables.$colorGraphite;
         margin: 0;
     }
@@ -53,10 +55,9 @@ header{
         flex-wrap: wrap;
 }
     &-links {
-        font-weight: 400;
+        @include mixins.fontWeight (400);
         list-style-type: none;
         display: flex;
-        @extend .logo__anchor-main-page;
     }
 
     &__listed-link {
@@ -70,42 +71,11 @@ header{
 
 .header-nav     {
     &-links__link {
-        font-size: 1.31rem;
-        font-weight: 400;
+        @include mixins.textVariationSize (1.31rem);
+        @include mixins.fontWeight (400);
         text-decoration: none;
         display: inline-block;
         color:variables.$colorGraphite;
     }
-
-    nitro-blue {
-        color: variables.$colorNitroBlue;
-    }
 }
 
-// -----Footer------//
-
-.site-footer{
-    background-color: variables.$backgroundColor;
-    display: block;
-    flex-direction: row;
-    justify-content: space-around;
-    height: 50%;
-    padding: 3.12rem 0rem;
-
-    &__container {
-        display: flex;
-        flex-direction: revert;
-        justify-content: space-evenly;
-    }
-
-    &__title {
-        font-size: 2.062rem;
-        font-weight: 300;
-    }
-
-    &__social-logo{
-        max-width: 7.5rem; 
-        width: 3.12rem;
-        height:3.12rem;
-    }
-}

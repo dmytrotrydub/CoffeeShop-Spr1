@@ -1,0 +1,130 @@
+@use "../mixins";
+@use "../variables";
+@use "../view-all-button/view-all-button";
+
+
+%button-offset {
+        position:absolute;
+        min-width: 11.25rem;
+        max-width: 80%;
+        height: 4em;
+        width: 14.4873125em;
+        border: 2px solid variables.$colorGraphite;
+        z-index: 1;
+        transform: translate(-7px -7px);
+
+}
+
+.were-different {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 3.12rem;
+    padding: 6.25em 3.12em 0px 3.12em;
+
+    &__description-container {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        padding: 0 50px;
+
+        &-heading {
+            display: block;
+            @include mixins.textVariationSize (3.75rem);
+            @include mixins.fontWeight (300);
+            text-align: center;
+            margin-top: 0;
+            display: block;
+            text-align: start;
+
+            &-text {
+                padding: 20px 0;
+        }
+        }
+    }
+
+
+    &-images__container {
+        display: flex;
+        justify-content: space-between;
+
+
+        .were-different-image {
+            min-width:  3.12em;
+            max-width: 7.5em;
+            max-width: 7.5rem;
+            width: 3.12rem;
+            height: 3.12rem;
+        }
+    }
+
+    &__learn-more-button {
+        min-width: 11.25rem;
+        max-width: 80%;
+        width: 140px;
+        padding:1.25rem 0;
+        border: none;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        &--border-offset {
+            @extend %view-all-button__border-displace;
+            margin: 20px 0;
+
+        }
+
+        &-title {
+            @extend  %view-all__button ;
+        }
+    }
+
+    &__hero {
+
+        &__container {
+            background-image: url("../../../assets/cold-brew-background.png");
+            background-size: cover;
+            min-width:25em;
+            max-width:31.25em;
+            height: 22.765em;
+            width: 400px;
+        }
+
+        &-image {
+            padding: 20px;
+
+
+            &:hover {
+                animation-name: picture-rotation;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes picture-rotation {
+                from {transform: rotate(0deg)};
+                to {transform:rotate(360deg)}
+            }
+        }
+
+        &-image--offset {
+            min-width: 400px;
+            max-width: 500px;
+            height: 364.211px;
+            width: 400px;
+            border: 5px solid variables.$colorNitroBlue;
+            display: flex;
+            justify-content: center;
+            position: absolute;
+            transform: translate(-20px, -20px);
+        }
+    }
+
+
+}
+
+
+
+
+
+

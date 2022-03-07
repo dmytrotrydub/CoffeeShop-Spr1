@@ -1,0 +1,74 @@
+@use "../global";
+@use "../variables";
+@use "../mixins";
+
+
+%view-all__button {
+    @include mixins.backgroundColor (variables.$colorNitroBlue);
+    @include mixins.defineColor (variables.$colorWhite);
+    height: 64px;
+    width: 173px;
+    font-size: 1.31rem;
+    font-weight: 400;
+    min-width: 11.25rem;
+    max-width: 80%;
+    padding:1.25rem;
+    border: none;
+}
+
+
+%view-all-button__border-displace {
+    height: 64px;
+    width: 173px;
+    min-width: 11.25rem;
+    max-width: 80%;
+    border: 2px solid variables.$colorGraphite; 
+    position: absolute;
+    z-index: 1;
+    transform: translate( -7px, -7px);
+
+    &:active {
+        transform: translate(0px,0px);
+    }
+}
+
+
+
+
+.view-all-button   {
+    &__container {
+        text-align: center;
+        background-color: #F7F7F7;
+        padding: 2.5em 0;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__border-box{
+        @extend %view-all-button__border-displace;
+        animation-name: buttonTransform;
+        transition: .25s;
+        animation-duration: 0.25s;
+        
+        @keyframes buttonTransform {
+            from    {transform: translate(-7px -7px);}
+            to  {transform: translate(0 0);}
+        }
+    }
+
+    &__name {
+        @extend %view-all__button;
+    }
+}
+
+
+
+.view-all__link {
+    text-decoration: none;
+    @include mixins.defineColor (variables.$colorWhite);
+    @include mixins.textVariationSize (1.31rem);
+    @include mixins.fontWeight (400);
+    display: none;
+    visibility: hidden;
+}

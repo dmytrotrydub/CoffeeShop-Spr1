@@ -26,7 +26,7 @@
                         <a class="header-nav-links__link" href="./pages/menu.html">MENU</a>
                     </li>
                     <li class="header-nav__listed-link">
-                        <a class="header-nav-links__link nitro-blue" href="./pages/menu.html">SHOP NOW</a>
+                        <a class="header-nav-links__link header-links-link__nitro-blue" href="./pages/menu.html">SHOP NOW</a>
                     </li>
                     </ul>
             </nav>
@@ -37,18 +37,22 @@
         <div class="main-section-shop-now__container">
             <div class="nitro-shop-cta">
                 <div class="nitro-shop-cta__container">
-                    <div class="main-section__heading-description-container">
+                    <div class="nitro-shop-cta__title-holder">
                         <h1 class="nitro-shop-cta__title">Nitro Coffee</h1>
                         <p class="nitro-shop-cta__description">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffea seeds</p>       
                     </div>
-                    <div class="action-button__container">
-                        <button class="action-button__shop-now">               
-                            <a class="action-button__link" href="./pages/menu.html"> SHOP NOW</a>
+                    <form action ="./pages/menu.html" class="action-button__container">
+                        <button class="action-button__border-box">
+                            <a class="action-button__link" href="./pages/menu.html">
+                            </a>
                         </button>
-                    </div>
+                        <button type="button" class="action-button__shop-now">               
+                            <a class="action-button__link" href=""> SHOP NOW</a>
+                        </button>
+                    </form>
                 </div>
             </div>
-            <div class="nitro-shop__img__container">
+            <div class="nitro-shop-cta__img-container">
                 <img id="nitro-shop__img" src="./assets/coffeebeans-hero.png" alt="coffee bag"/>
             </div>
         </div>
@@ -101,14 +105,46 @@
             </div>
         </div>
     </section>
-    <section class="viw-all-button"></section>
-    <div class="view-all-button__container">
-        <button class="view-all-button__name">
-            <a class="view-all__link"href="./pages/menu.html">
-               VIEW ALL 
-            </a>
-        </button>
-    </div>
+    <section class="view-all-button">
+        <form action = "/pages/menu.html" class="view-all-button__container">
+            <button class="action-button__border-box">
+                <a class="view-all__link" href="./pages/menu.html">
+                </a>
+            </button>           
+            <button type="button" class="view-all-button__name">
+                VIEW ALL 
+            </button>
+        </form>
+    </section>
+
+    <section class="were-different">
+        <div class="were-different__description-container">
+            <h1 class="were-different__description-container-heading">We're Different</h1>
+            <p class="were-different__description-container-text">We grow and roast our own beans. Every bean, every cup, every step of the way. we strive for excellence.</p>
+            <div class="were-different-images__container">
+                <img class="were-different-image" src="./assets/planting.svg" alt="planting">
+                <img class="were-different-image" src="./assets/coffee-beans.svg" alt="coffee-beans">
+                <img class="were-different-image" src="./assets/coffee-cup.svg" alt="coffee-cup">
+            </div>
+            <div class="were-different__button">                
+                <form action = "pages/menu.html" class="were-different__learn-more-button">
+                    <button class="action-button__border-box">
+                        <a class="view-all__link" href="./pages/menu.html"></a>
+                    </button>    
+                    <button type="button" class="were-different__learn-more-button-title">
+                        <a class="action-button__link" href="./pages/menu.html"> LEARN MORE</a>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="were-different__hero">
+            <div class="were-different__hero__container">       
+                <div class="were-different__hero-image--offset">
+                    <img class="were-different__hero-image" src="./assets/tiltedcan.png" alt="were-different-coldbrew">
+                </div>
+            </div> 
+        </div>
+    </section>
 
     <section class="discount-info">
         <div class="discount-info__container">
@@ -141,6 +177,10 @@
                     <img class="site-footer__social-logo" src="./assets/Instagram-Icon.svg" alt="instagram">
                 </a>
             </div>
+        </div>
+        <div class="site-footer__images">
+            <img class="site-footer__images-bean" src="./assets/coffee-beans-logo-and-footer.svg" alt="cofeebean-1">
+            <img class="site-footer__images-bean" src="./assets/coffee-beans-logo-and-footer.svg" alt="cofeebean-2">
         </div>
     </footer>
 

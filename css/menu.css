@@ -1,52 +1,6 @@
-/* -----HEADER STYLING ------- */
-header{
-    background-color: #FFF0ED;
-}
 
-.logo__anchor-main-page-link {
-    text-decoration: none;
-}
-
-.nitro-heading__h2 {
-    font-size: 3.75rem;
-    font-weight: 300;
-    color: #393939;
-    text-decoration: none;
-    display: inline;
-}
-
-.header__nav-links{
-    display: inline;
-}
-
-.listed__link {
-    list-style-type: none;
-    display: inline-block;
-    margin: 0px 1.87rem;
-    text-decoration: none;
-}
-
-.header__nav-list {
-    display: inline;
-}
-
-.nav-links__link {
-    font-size: 1.31rem;
-    font-weight: 400;
-    text-decoration: none;
-    display: inline;
-    color: #393939;
-}
-
-.shop-now-link__nitro-blue {
-    color: #5BACC3;
-}
-/* -------------------------------- */
 
 /* -----MENU SECTION STYLING */
-main {
-    padding-top: 5.09rem;
-}
 
 
 .menu__header-container{
@@ -164,7 +118,7 @@ main {
     margin: 0;
 }
 
-.item-name {
+.product-description__item-name {
     width: 30%;
     display: flex;
     flex-wrap: wrap;

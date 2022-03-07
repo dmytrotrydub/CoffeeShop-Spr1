@@ -1,0 +1,64 @@
+
+@use "../variables";
+@use "../mixins";
+
+
+
+
+
+.main-section   {
+    &-shop-now  {
+      @include mixins.backgroundColor (variables.$backgroundColorPink);
+    }
+
+    &-shop-now__container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        height: fit-content;
+
+        .nitro-shop-cta{
+            height: 30%;
+            width: 50%;
+            margin: 0rem .25rem 0rem 6.25rem;
+            padding: 12.5rem 0rem 12.5rem 0rem;
+            display: inline-block;
+            text-align: center;
+        
+            &__container {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+        
+            &__title-holder {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+        
+        
+            &__title{
+                @include mixins.textVariationSize (3.75rem);
+                @include mixins.fontWeight (300);
+                text-align: start;
+                display: inline-block;
+                margin-bottom: 0px;
+            }
+        
+            &__description {
+                @include mixins.textVariationSize(1.12rem);
+                @include mixins.fontWeight (400);
+                display: inline-block;
+                text-align: initial;
+            }
+        
+            &__img-container {
+                margin-top: 3.12rem;
+            }
+        }
+    }
+
+}
+

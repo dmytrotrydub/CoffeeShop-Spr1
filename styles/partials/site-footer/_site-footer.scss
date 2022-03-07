@@ -1,0 +1,48 @@
+@use "../variables";
+@use "../mixins";
+
+
+.site-footer    {
+    @include mixins.backgroundColor (variables.$backgroundColorPink);
+    height: 50%;
+
+
+    &__container {
+        display: flex;
+        flex-direction: revert;
+        justify-content: space-evenly;
+    }
+
+    &__title {
+        @include mixins.textVariationSize (2.06rem);
+        @include mixins.fontWeight (300);
+    }
+
+    &__social-logo  {
+        max-width: 7.5rem; 
+        width: 3.12rem;
+        height:3.12rem;
+    }
+
+    &__images {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        transform: translate(-50px);
+        bottom: 9.37em;
+
+        &-bean {
+            min-width: 3.75em;
+            max-width: 7.5em;
+            height: 7.5em;
+            width: 7.5em;
+            opacity: 25%;
+
+            &:last-child {
+                position: relative;
+                left: 100px;
+                top: 100px;
+            }
+        }
+    }
+}

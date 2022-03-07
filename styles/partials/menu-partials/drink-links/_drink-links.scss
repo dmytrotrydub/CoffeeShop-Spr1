@@ -1,0 +1,31 @@
+@use "../../mixins";
+@use "../../variables";
+
+
+.drink-list {
+    &__container{
+        @include mixins.backgroundColor (variables.$colorGraphite);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1.25rem;
+        max-width: 100%;
+        min-height: 3.75rem;
+        max-height: 5rem; 
+}
+    &__listed-link{
+        @include mixins.textVariationSize (1.31rem);
+        border-left: 0.25rem solid #5BACC3;
+        display: inline;
+        list-style-type: none;
+        padding: 0rem 2.5rem 0rem 2.5rem;
+}
+    &__link{   
+        @include mixins.fontWeight (400);
+        @include mixins.defineColor (variables.$colorWhite);
+        display: inline ;
+        text-decoration: none;  
+        text-align: center; 
+}
+
+}

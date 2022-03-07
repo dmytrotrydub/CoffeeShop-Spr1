@@ -1,0 +1,51 @@
+
+@use "../variables";
+@use "../mixins";
+
+
+.discount-info {
+    @include mixins.defineColor (variables.$colorWhite);
+    display: inline-block;
+    text-align: justify;;
+    width: 100%;
+
+    &__container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        margin: 100px 0;
+    }
+
+
+
+    &__text {
+        @include mixins.textVariationSize (2.81rem);
+        @include mixins.fontWeight(400);
+        @include mixins.defineColor (variables.$colorWhite);
+        @include mixins.backgroundColor(variables.$colorGraphite);
+        padding: 1.25em;
+        min-width: 2.81rem;
+        max-width: 90%;
+        text-align: center;
+        margin: 1.25em;
+        animation-name: colorChange;
+        animation-duration: 2.5s;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes colorChange {
+        0% {background-color: variables.$colorGraphite};
+        50% {background-color: variables.$colorNitroBlue};
+        100% {background-color: variables.$colorGraphite}
+    }
+
+
+    &__text span    {
+        @include mixins.fontWeight (variables.$fontWeightBold);
+        @include mixins.defineColor (variables.$colorWhite);
+        @include mixins.textVariationSize (2.81rem);
+        min-width: 2.81rem;
+    }
+}
